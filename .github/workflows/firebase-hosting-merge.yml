@@ -18,22 +18,3 @@ jobs:
       
       - name: Stop early (success)
         run: echo "Debug complete — check the Actions log for paths."
-```
-
-4. **Commit directly to main** (or create a branch):
-   - Scroll down
-   - Add commit message: `Debug: Find package.json location`
-   - Click **"Commit changes"**
-
-5. **Go to Actions tab** immediately:
-   - Click "Actions" at the top
-   - Click on the running workflow
-   - Wait ~30 seconds for it to complete
-   - Click on "debug_layout" job
-   - Click on "Show repo layout" step
-
-6. **Look for lines like:**
-```
-   ./frontend
-   ./studio
-   ./client
