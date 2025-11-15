@@ -67,8 +67,4 @@
 		"tailwindcss-textshadow": "^2.1.3",
 		"typescript": "^5"
 	}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 538270e9053a645fc16cc53b0480db02c285c77d
+} 
