@@ -1,4 +1,4 @@
- 
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter, Montserrat } from 'next/font/google';
@@ -24,22 +24,22 @@ const logoUrl = 'https://i.imgur.com/wqfSmsa.png';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Kulture Foundation | Preserving Heritage, Empowering Futures',
-    template: '%s | Kulture Foundation',
+    default: '256 Estates Foundation | Preserving Heritage, Empowering Futures',
+    template: '%s | 256 Estates Foundation',
   },
-  description: "Kulture Foundation is a Ugandan NGO preserving cultural heritage while building sustainable communities through education, arts, and multimedia storytelling.",
+  description: "256 Estates Foundation is a Ugandan NGO preserving cultural heritage while building sustainable communities through education, arts, and multimedia storytelling.",
   manifest: '/manifest.webmanifest',
   openGraph: {
-    title: 'Kulture Foundation | Preserving Heritage, Empowering Futures',
+    title: '256 Estates Foundation | Preserving Heritage, Empowering Futures',
     description: "A Ugandan NGO preserving cultural heritage and empowering communities.",
     url: siteUrl,
-    siteName: 'Kulture Foundation',
+    siteName: '256 Estates Foundation',
     images: [
       {
         url: logoUrl,
         width: 512,
         height: 512,
-        alt: 'Kulture Foundation Logo',
+        alt: '256 Estates Foundation Logo',
       },
     ],
     locale: 'en_US',
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kulture Foundation | Preserving Heritage, Empowering Futures',
+    title: '256 Estates Foundation | Preserving Heritage, Empowering Futures',
     description: "A Ugandan NGO preserving cultural heritage and empowering communities through storytelling, education, and art.",
-    creator: '@KultureFoundUG',
+    creator: '@256Estates',
     images: [logoUrl], 
   },
   alternates: {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Kulture Foundation",
+  "name": "256 Estates Foundation",
   "url": "https://foundation.256estates.com",
   "logo": "https://pbs.twimg.com/profile_images/1983132276138364928/65CEsWwK_400x400.jpg",
   "contactPoint": {
@@ -91,7 +91,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -101,7 +100,6 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-KT5BP5ZM');
           `}
         </Script>
-        {/* End Google Tag Manager */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-58K6BP01Q1"
@@ -117,10 +115,8 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={cn("min-h-screen bg-background antialiased", fontBody.variable, fontHeadline.variable)}>
-        {/* Google Tag Manager (noscript) */}
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT5BP5ZM"
         height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
-        {/* End Google Tag Manager (noscript) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -132,4 +128,3 @@ export default function RootLayout({
     </html>
   );
 }
-
