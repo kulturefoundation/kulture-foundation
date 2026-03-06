@@ -67,3 +67,10 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# Next.js build output
+.next/
+out/
+
+# Environment variables (security)
+.env*.local

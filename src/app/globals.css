@@ -1,1 +1,93 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 4 81% 95%; /* Off-white/Cream */
+    --foreground: 224 71% 4%; /* Deep Charcoal */
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+
+    --primary: 160 92% 31%; /* Rich Forest Green */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 30% 90%; /* Light Green */
+    --secondary-foreground: 160 92% 31%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 39 94% 51%; /* Luxurious Gold */
+    --accent-foreground: 224 71% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 160 92% 31%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%; /* Deep Charcoal */
+    --foreground: 0 0% 98%; /* White */
+
+    --card: 224 71% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 153 91% 36%; /* Brighter Green */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 153 91% 10%; /* Darker Green */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 224 71% 8%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 39 94% 51%; /* Gold */
+    --accent-foreground: 224 71% 4%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 224 71% 12%;
+    --input: 224 71% 12%;
+    --ring: 39 94% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+  html, body {
+    @apply font-body;
+  }
+}
+
+
+@layer utilities {
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
  

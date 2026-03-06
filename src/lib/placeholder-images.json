@@ -1,0 +1,654 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "about-people",
+      "description": "Group of people in a workshop",
+      "imageUrl": "https://picsum.photos/seed/aboutpeople/1080/720",
+      "imageHint": "Ugandan people"
+    },
+    {
+      "id": "map-static",
+      "description": "Static map of Uganda with pins",
+      "imageUrl": "https://i.imgur.com/gV8Rz2y.png",
+      "imageHint": "Uganda map"
+    },
+    {
+      "id": "kulture-foundation-logo",
+      "description": "Kulture Foundation Logo",
+      "imageUrl": "https://i.imgur.com/wqfSmsa.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "event-gala",
+      "description": "Cultural Heritage Gala",
+      "imageUrl": "https://picsum.photos/seed/gala/1080/720",
+      "imageHint": "cultural gala"
+    },
+    {
+      "id": "event-workshop",
+      "description": "Youth Empowerment Workshop",
+      "imageUrl": "https://picsum.photos/seed/workshop/1080/720",
+      "imageHint": "youth workshop"
+    },
+    {
+      "id": "event-showcase",
+      "description": "Artist Showcase Event",
+      "imageUrl": "https://picsum.photos/seed/showcase/1080/720",
+      "imageHint": "art showcase"
+    },
+    {
+      "id": "event-cleanup",
+      "description": "Community members participating in a clean-up drive",
+      "imageUrl": "https://picsum.photos/seed/cleanup/1080/720",
+      "imageHint": "community cleanup"
+    },
+    {
+      "id": "testimonial-maria",
+      "description": "Avatar for Maria Nakato",
+      "imageUrl": "https://picsum.photos/seed/maria/200/200",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-david",
+      "description": "Avatar for David Okello",
+      "imageUrl": "https://picsum.photos/seed/david/200/200",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-grace",
+      "description": "Avatar for Grace Namazzi",
+      "imageUrl": "https://picsum.photos/seed/grace/200/200",
+      "imageHint": "elderly woman"
+    },
+    {
+      "id": "logo",
+      "description": "Kulture Foundation Logo as an avatar",
+      "imageUrl": "https://i.imgur.com/wqfSmsa.png",
+      "imageHint": "foundation logo"
+    },
+    {
+      "id": "story-village",
+      "description": "A traditional Ugandan village scene",
+      "imageUrl": "https://picsum.photos/seed/village/1080/720",
+      "imageHint": "Ugandan village"
+    },
+    {
+      "id": "story-market",
+      "description": "A bustling market in Uganda",
+      "imageUrl": "https://picsum.photos/seed/market/1080/720",
+      "imageHint": "Ugandan market"
+    },
+    {
+      "id": "story-dance",
+      "description": "Traditional Ugandan dancers",
+      "imageUrl": "https://picsum.photos/seed/dance/1080/720",
+      "imageHint": "Ugandan dance"
+    },
+    {
+      "id": "carousel-hero-1",
+      "description": "Children smiling and learning in Uganda",
+      "imageUrl": "https://picsum.photos/seed/hero1/1920/1080",
+      "imageHint": "children learning"
+    },
+    {
+      "id": "carousel-hero-2",
+      "description": "Woman weaving a traditional Ugandan basket",
+      "imageUrl": "https://picsum.photos/seed/hero2/1920/1080",
+      "imageHint": "Ugandan craft"
+    },
+    {
+      "id": "carousel-hero-3",
+      "description": "A vibrant landscape in Uganda with rolling hills",
+      "imageUrl": "https://picsum.photos/seed/hero3/1920/1080",
+      "imageHint": "Ugandan landscape"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "Person writing in a journal",
+      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageHint": "storytelling writing"
+    },
+    {
+      "id": "blog-post-2",
+      "description": "Hands weaving a basket",
+      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageHint": "basket weaving"
+    },
+    {
+      "id": "blog-post-3",
+      "description": "Sun shining on a school building",
+      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageHint": "school sun"
+    },
+    {
+      "id": "blog-post-4",
+      "description": "Clean water flowing from a tap",
+      "imageUrl": "https://picsum.photos/seed/blog4/600/400",
+      "imageHint": "clean water"
+    },
+    {
+      "id": "blog-post-5",
+      "description": "A community gathering in Uganda",
+      "imageUrl": "https://picsum.photos/seed/blog5/600/400",
+      "imageHint": "community gathering"
+    },
+    {
+      "id": "partner-1",
+      "description": "Partner 1 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+One",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-2",
+      "description": "Partner 2 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+Two",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-3",
+      "description": "Partner 3 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+Three",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-4",
+      "description": "Partner 4 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+Four",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-5",
+      "description": "Partner 5 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+Five",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-6",
+      "description": "Partner 6 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+Six",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-7",
+      "description": "Partner 7 Logo",
+      "imageUrl": "https://placehold.co/150x60/EEE/333?text=Partner+Seven",
+      "imageHint": "partner logo"
+    },
+    {
+      "id": "partner-flutterwave",
+      "description": "Flutterwave Logo",
+      "imageUrl": "https://i.imgur.com/cSZHIcy.png",
+      "imageHint": "payment partner"
+    },
+    {
+      "id": "partner-coinbase",
+      "description": "Coinbase Logo",
+      "imageUrl": "https://i.imgur.com/rN5V5E3.png",
+      "imageHint": "payment partner"
+    },
+    {
+      "id": "hotel-1",
+      "description": "Sheraton Hotel Logo",
+      "imageUrl": "https://placehold.co/150x80/EEE/333?text=Sheraton",
+      "imageHint": "hotel logo"
+    },
+    {
+      "id": "hotel-2",
+      "description": "Serena Hotel Logo",
+      "imageUrl": "https://placehold.co/150x80/EEE/333?text=Serena",
+      "imageHint": "hotel logo"
+    },
+    {
+      "id": "hotel-3",
+      "description": "Protea Hotel Logo",
+      "imageUrl": "https://placehold.co/150x80/EEE/333?text=Protea",
+      "imageHint": "hotel logo"
+    },
+    {
+      "id": "hotel-4",
+      "description": "Speke Resort Logo",
+      "imageUrl": "https://placehold.co/150x80/EEE/333?text=Speke",
+      "imageHint": "hotel logo"
+    },
+    {
+      "id": "hotel-5",
+      "description": "Latitude 0 Degrees Hotel Logo",
+      "imageUrl": "https://placehold.co/150x80/EEE/333?text=Latitude+0",
+      "imageHint": "hotel logo"
+    },
+    {
+      "id": "tour-1",
+      "description": "Gorillas in Bwindi Forest",
+      "imageUrl": "https://picsum.photos/seed/tour1/600/400",
+      "imageHint": "Bwindi forest"
+    },
+    {
+      "id": "tour-2",
+      "description": "A bustling street in Kampala",
+      "imageUrl": "https://picsum.photos/seed/tour2/600/400",
+      "imageHint": "Kampala city"
+    },
+    {
+      "id": "tour-3",
+      "description": "A boat on the Source of the Nile",
+      "imageUrl": "https://picsum.photos/seed/tour3/600/400",
+      "imageHint": "Murchison falls"
+    },
+    {
+      "id": "volunteer-hero",
+      "description": "Group of volunteers working together",
+      "imageUrl": "https://picsum.photos/seed/volunteerhero/1920/1080",
+      "imageHint": "community volunteers"
+    },
+    {
+      "id": "program-education",
+      "description": "Child reading a book in Uganda",
+      "imageUrl": "https://picsum.photos/seed/progedu/600/400",
+      "imageHint": "Ugandan child reading"
+    },
+    {
+      "id": "program-arts",
+      "description": "Ugandan artist painting",
+      "imageUrl": "https://picsum.photos/seed/proparts/600/400",
+      "imageHint": "Ugandan artist"
+    },
+    {
+      "id": "program-storytelling",
+      "description": "People gathered listening to a story",
+      "imageUrl": "https://picsum.photos/seed/progstory/600/400",
+      "imageHint": "group listening"
+    },
+    {
+      "id": "program-youth",
+      "description": "Young people collaborating in Uganda",
+      "imageUrl": "https://picsum.photos/seed/progyouth/600/400",
+      "imageHint": "youth empowerment"
+    },
+    {
+      "id": "gallery-education-1",
+      "description": "Children learning in a classroom",
+      "imageUrl": "https://picsum.photos/seed/galedu1/600/600",
+      "imageHint": "Ugandan students"
+    },
+    {
+      "id": "gallery-education-2",
+      "description": "Child reading a book outdoors",
+      "imageUrl": "https://picsum.photos/seed/galedu2/600/600",
+      "imageHint": "child reading"
+    },
+    {
+      "id": "gallery-education-3",
+      "description": "Mentorship session",
+      "imageUrl": "https://picsum.photos/seed/galedu3/600/600",
+      "imageHint": "mentorship"
+    },
+    {
+      "id": "gallery-arts-1",
+      "description": "Cultural dance performance",
+      "imageUrl": "https://picsum.photos/seed/galarts1/600/600",
+      "imageHint": "cultural dance"
+    },
+    {
+      "id": "gallery-arts-2",
+      "description": "Artisan weaving a basket",
+      "imageUrl": "https://picsum.photos/seed/galarts2/600/600",
+      "imageHint": "Ugandan craft"
+    },
+    {
+      "id": "gallery-arts-3",
+      "description": "Musician playing a traditional instrument",
+      "imageUrl": "https://picsum.photos/seed/galarts3/600/600",
+      "imageHint": "traditional music"
+    },
+    {
+      "id": "gallery-culture-1",
+      "description": "Elderly person telling a story",
+      "imageUrl": "https://picsum.photos/seed/galculture1/600/600",
+      "imageHint": "storytelling tradition"
+    },
+    {
+      "id": "gallery-culture-2",
+      "description": "People in colorful traditional Ugandan attire",
+      "imageUrl": "https://picsum.photos/seed/galculture2/600/600",
+      "imageHint": "Ugandan attire"
+    },
+    {
+      "id": "gallery-culture-3",
+      "description": "People gathered for a community storytelling session",
+      "imageUrl": "https://picsum.photos/seed/galculture3/600/600",
+      "imageHint": "community listening"
+    },
+    {
+      "id": "gallery-events-1",
+      "description": "People at a community gathering",
+      "imageUrl": "https://picsum.photos/seed/galevents1/600/600",
+      "imageHint": "community event"
+    },
+    {
+      "id": "gallery-events-2",
+      "description": "Youth participating in a workshop",
+      "imageUrl": "https://picsum.photos/seed/galevents2/600/600",
+      "imageHint": "youth workshop"
+    },
+    {
+      "id": "gallery-events-3",
+      "description": "Volunteers distributing aid",
+      "imageUrl": "https://picsum.photos/seed/galevents3/600/600",
+      "imageHint": "fundraising drive"
+    },
+    {
+      "id": "map-kasubi-tombs",
+      "description": "The historic Kasubi Tombs entrance",
+      "imageUrl": "https://picsum.photos/seed/kasubi/800/600",
+      "imageHint": "Kasubi Tombs"
+    },
+    {
+      "id": "map-baker-fort",
+      "description": "The remains of Baker's Fort in Patiko",
+      "imageUrl": "https://picsum.photos/seed/bakerfort/800/600",
+      "imageHint": "historic ruins"
+    },
+    {
+      "id": "map-nyero-rock",
+      "description": "Ancient paintings on Nyero rock",
+      "imageUrl": "https://picsum.photos/seed/nyero/800/600",
+      "imageHint": "rock paintings"
+    },
+    {
+      "id": "map-bwindi-forest",
+      "description": "Misty Bwindi Impenetrable Forest",
+      "imageUrl": "https://picsum.photos/seed/bwindi/800/600",
+      "imageHint": "Bwindi forest"
+    },
+    {
+      "id": "map-ssese-islands",
+      "description": "A serene view of the Ssese Islands",
+      "imageUrl": "https://picsum.photos/seed/ssese/800/600",
+      "imageHint": "Uganda island"
+    },
+    {
+      "id": "map-nile-source",
+      "description": "The Source of the Nile in Jinja",
+      "imageUrl": "https://picsum.photos/seed/nile/800/600",
+      "imageHint": "Nile river"
+    },
+    {
+      "id": "map-igongo",
+      "description": "Igongo Cultural Centre",
+      "imageUrl": "https://picsum.photos/seed/igongo/800/600",
+      "imageHint": "cultural centre"
+    },
+    {
+      "id": "map-hot-springs",
+      "description": "Sempaya Hot Springs",
+      "imageUrl": "https://picsum.photos/seed/hotsprings/800/600",
+      "imageHint": "hot springs"
+    },
+    {
+      "id": "map-elgon-caves",
+      "description": "Caves on Mount Elgon",
+      "imageUrl": "https://picsum.photos/seed/elgoncaves/800/600",
+      "imageHint": "mountain cave"
+    },
+    {
+      "id": "map-naggalabi",
+      "description": "Naggalabi Coronation Site",
+      "imageUrl": "https://picsum.photos/seed/naggalabi/800/600",
+      "imageHint": "coronation site"
+    },
+    {
+      "id": "map-bahai-temple",
+      "description": "Baháʼí House of Worship",
+      "imageUrl": "https://picsum.photos/seed/bahai/800/600",
+      "imageHint": "bahai temple"
+    },
+    {
+      "id": "map-martyrs-shrine",
+      "description": "Uganda Martyrs Shrine in Namugongo",
+      "imageUrl": "https://picsum.photos/seed/martyrs/800/600",
+      "imageHint": "martyrs shrine"
+    },
+    {
+      "id": "map-sebei-caves",
+      "description": "Sebei Ancestral Caves",
+      "imageUrl": "https://picsum.photos/seed/sebei/800/600",
+      "imageHint": "ancestral caves"
+    },
+    {
+      "id": "map-bigobyamugenyi",
+      "description": "Bigo bya Mugenyi Earthworks",
+      "imageUrl": "https://picsum.photos/seed/bigo/800/600",
+      "imageHint": "earthworks ruins"
+    },
+    {
+      "id": "map-ntanda-site",
+      "description": "Ntanda Spiritual Site",
+      "imageUrl": "https://picsum.photos/seed/ntanda/800/600",
+      "imageHint": "spiritual waterfall"
+    },
+    {
+      "id": "map-karamoja-manyatta",
+      "description": "A Karamoja Manyatta homestead",
+      "imageUrl": "https://picsum.photos/seed/karamoja/800/600",
+      "imageHint": "karamoja homestead"
+    },
+    {
+      "id": "map-punwala-salt-lake",
+      "description": "Punwala Salt Lake",
+      "imageUrl": "https://picsum.photos/seed/saltlake/800/600",
+      "imageHint": "salt lake"
+    },
+    {
+      "id": "map-wamala-tombs",
+      "description": "Wamala Tombs",
+      "imageUrl": "https://picsum.photos/seed/wamala/800/600",
+      "imageHint": "royal tombs"
+    },
+    {
+      "id": "map-sipi-falls",
+      "description": "Sipi Falls",
+      "imageUrl": "https://picsum.photos/seed/sipi/800/600",
+      "imageHint": "sipi falls"
+    },
+    {
+      "id": "cause-school",
+      "description": "Happy students receiving new school supplies",
+      "imageUrl": "https://picsum.photos/seed/causeschool/600/400",
+      "imageHint": "school supplies"
+    },
+    {
+      "id": "cause-music",
+      "description": "People playing traditional Ugandan instruments",
+      "imageUrl": "https://picsum.photos/seed/causemusic/600/400",
+      "imageHint": "traditional music"
+    },
+    {
+      "id": "cause-youth",
+      "description": "Young people learning on laptops",
+      "imageUrl": "https://picsum.photos/seed/causeyouth/600/400",
+      "imageHint": "digital literacy"
+    },
+    {
+      "id": "cause-storytelling",
+      "description": "A person being interviewed on camera for a documentary",
+      "imageUrl": "https://picsum.photos/seed/causestory/600/400",
+      "imageHint": "documentary interview"
+    },
+    {
+      "id": "cause-family",
+      "description": "A family receiving a food donation",
+      "imageUrl": "https://picsum.photos/seed/causefamily/600/400",
+      "imageHint": "food donation"
+    },
+    {
+      "id": "cause-art",
+      "description": "A painter's colorful palette and brushes",
+      "imageUrl": "https://picsum.photos/seed/causeart/600/400",
+      "imageHint": "art supplies"
+    },
+    {
+      "id": "shop-shirt",
+      "description": "Kulture Foundation branded t-shirt",
+      "imageUrl": "https://i.imgur.com/8zS2B0A.png",
+      "imageHint": "t-shirt"
+    },
+    {
+      "id": "shop-hoodie",
+      "description": "Kulture Foundation branded hoodie",
+      "imageUrl": "https://i.imgur.com/i9Rup4A.png",
+      "imageHint": "hoodie"
+    },
+    {
+      "id": "shop-tote",
+      "description": "A vibrant Kitengi fabric tote bag",
+      "imageUrl": "https://picsum.photos/seed/shoptote/600/600",
+      "imageHint": "tote bag"
+    },
+    {
+      "id": "shop-wall-hanging",
+      "description": "A hand-woven wall hanging",
+      "imageUrl": "https://picsum.photos/seed/shopwall/600/600",
+      "imageHint": "wall hanging"
+    },
+    {
+      "id": "shop-bracelet",
+      "description": "A colorful multi-strand bracelet made of paper beads",
+      "imageUrl": "https://picsum.photos/seed/shopbracelet/600/600",
+      "imageHint": "bead bracelet"
+    },
+    {
+      "id": "shop-mug",
+      "description": "Kulture Foundation branded mug",
+      "imageUrl": "https://picsum.photos/seed/shopmug/600/600",
+      "imageHint": "coffee mug"
+    },
+    {
+      "id": "shop-basket",
+      "description": "Hand-woven traditional basket",
+      "imageUrl": "https://picsum.photos/seed/shopbasket/600/600",
+      "imageHint": "woven basket"
+    },
+    {
+      "id": "shop-beads",
+      "description": "Handmade beaded necklace",
+      "imageUrl": "https://picsum.photos/seed/shopbeads/600/600",
+      "imageHint": "beaded necklace"
+    },
+    {
+      "id": "volunteer-1",
+      "description": "Portrait of a smiling female volunteer",
+      "imageUrl": "https://picsum.photos/seed/vol1/200/200",
+      "imageHint": "volunteer portrait"
+    },
+    {
+      "id": "volunteer-2",
+      "description": "Portrait of a male volunteer outdoors",
+      "imageUrl": "https://picsum.photos/seed/vol2/200/200",
+      "imageHint": "volunteer portrait"
+    },
+    {
+      "id": "volunteer-3",
+      "description": "Two volunteers working together",
+      "imageUrl": "https://picsum.photos/seed/vol3/200/200",
+      "imageHint": "volunteers working"
+    },
+    {
+      "id": "volunteer-4",
+      "description": "A volunteer interacting with children",
+      "imageUrl": "https://picsum.photos/seed/vol4/200/200",
+      "imageHint": "volunteer children"
+    },
+    {
+      "id": "volunteer-5",
+      "description": "A group of happy volunteers",
+      "imageUrl": "https://picsum.photos/seed/vol5/200/200",
+      "imageHint": "volunteers group"
+    },
+    {
+      "id": "volunteer-6",
+      "description": "A volunteer engaged in a community project",
+      "imageUrl": "https://picsum.photos/seed/vol6/200/200",
+      "imageHint": "volunteers project"
+    },
+    {
+      "id": "sponsorship-hero",
+      "description": "A group of happy Ugandan school children",
+      "imageUrl": "https://picsum.photos/seed/sponsorhero/1920/1080",
+      "imageHint": "Ugandan school children"
+    },
+    {
+      "id": "child-samuel",
+      "description": "Portrait of Samuel",
+      "imageUrl": "https://picsum.photos/seed/samuel/600/400",
+      "imageHint": "Ugandan boy"
+    },
+    {
+      "id": "child-esther",
+      "description": "Portrait of Esther",
+      "imageUrl": "https://picsum.photos/seed/esther/600/400",
+      "imageHint": "Ugandan girl"
+    },
+    {
+      "id": "child-daniel",
+      "description": "Portrait of Daniel",
+      "imageUrl": "https://picsum.photos/seed/daniel/600/400",
+      "imageHint": "Ugandan boy"
+    },
+    {
+      "id": "child-faith",
+      "description": "Portrait of Faith",
+      "imageUrl": "https://picsum.photos/seed/faith/600/400",
+      "imageHint": "Ugandan girl"
+    },
+    {
+      "id": "pads-hero-girl",
+      "description": "Confident Ugandan schoolgirl with backpack",
+      "imageUrl": "https://i.imgur.com/1Yf03s3.png",
+      "imageHint": "Ugandan schoolgirl"
+    },
+    {
+      "id": "pads-celebration",
+      "description": "Girls in a classroom celebrating",
+      "imageUrl": "https://picsum.photos/seed/padscelebrate/1920/1080",
+      "imageHint": "success story girl"
+    },
+    {
+      "id": "pads-product",
+      "description": "Kulture Pads product pack",
+      "imageUrl": "https://i.imgur.com/gBwJ5aH.png",
+      "imageHint": "sanitary pads"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Team Member 1",
+      "imageUrl": "https://picsum.photos/seed/team1/400/500",
+      "imageHint": "portrait women"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Team Member 2",
+      "imageUrl": "https://picsum.photos/seed/team2/400/500",
+      "imageHint": "portrait men"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Team Member 3",
+      "imageUrl": "https://picsum.photos/seed/team3/400/500",
+      "imageHint": "portrait women"
+    },
+    {
+      "id": "team-member-4",
+      "description": "Team Member 4",
+      "imageUrl": "https://picsum.photos/seed/team4/400/500",
+      "imageHint": "portrait men"
+    },
+    {
+      "id": "team-member-5",
+      "description": "Team Member 5",
+      "imageUrl": "https://picsum.photos/seed/team5/400/500",
+      "imageHint": "portrait men"
+    }
+  ]
+}
+ 

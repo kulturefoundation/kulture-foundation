@@ -1,11 +1,9 @@
-
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter, Montserrat } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Providers } from '@/components/providers';
 import Script from 'next/script';
-
 
 const fontBody = Inter({
   subsets: ['latin'],
@@ -53,7 +51,7 @@ export const metadata: Metadata = {
     images: [logoUrl], 
   },
   alternates: {
-    canonical: '/',
+    canonical: siteUrl,
   },
   icons: {
     icon: '/favicon.ico',
@@ -91,6 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
+        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -100,6 +99,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-KT5BP5ZM');
           `}
         </Script>
+        {/* End Google Tag Manager */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-58K6BP01Q1"
@@ -115,8 +115,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={cn("min-h-screen bg-background antialiased", fontBody.variable, fontHeadline.variable)}>
+        {/* Google Tag Manager (noscript) */}
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT5BP5ZM"
         height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
+        {/* End Google Tag Manager (noscript) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
