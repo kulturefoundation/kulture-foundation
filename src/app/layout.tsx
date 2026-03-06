@@ -16,7 +16,7 @@ const fontHeadline = Montserrat({
   weight: ['400', '700', '800'],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://foundation.256estates.com';
+const siteUrl = 'https://foundation.256estates.com';
 const logoUrl = 'https://i.imgur.com/wqfSmsa.png';
 
 export const metadata: Metadata = {
@@ -89,7 +89,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -99,7 +98,6 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-KT5BP5ZM');
           `}
         </Script>
-        {/* End Google Tag Manager */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-58K6BP01Q1"
@@ -109,16 +107,13 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-58K6BP01Q1');
           `}
         </Script>
       </head>
       <body className={cn("min-h-screen bg-background antialiased", fontBody.variable, fontHeadline.variable)}>
-        {/* Google Tag Manager (noscript) */}
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT5BP5ZM"
         height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
-        {/* End Google Tag Manager (noscript) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
