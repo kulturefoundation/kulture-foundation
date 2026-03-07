@@ -1,0 +1,21 @@
+{
+  "name": "256 Estates Foundation",
+  "short_name": "256 Estates",
+  "description": "Preserving Ugandan cultural heritage and building sustainable communities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064E3B",
+  "theme_color": "#F59E0B",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/wqfSmsa.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/wqfSmsa.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
