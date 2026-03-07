@@ -84,7 +84,7 @@ export default function Header() {
           )}
           <div className="hidden sm:flex flex-col">
             <span className="text-xl font-bold text-foreground font-headline leading-none uppercase">256 Estates</span>
-            <span className="text-xs text-foreground/80 tracking-widest leading-none">FOUNDATION</span>
+            <span className="text-xs text-foreground/80 tracking-widest leading-none uppercase">Foundation</span>
           </div>
         </Link>
         <NavigationMenu className="hidden lg:flex">

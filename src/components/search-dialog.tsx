@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   CommandDialog,
@@ -26,10 +25,10 @@ export function SearchDialog({ isOpen, onOpenChange }: SearchDialogProps) {
     const router = useRouter();
 
     const allContent = useMemo(() => {
-        const posts = getAllPosts().map(item => ({ ...item, type: 'Blog', path: '/blog' }));
-        const stories = getAllStories().map(item => ({ ...item, type: 'Story', path: '/story-hub' }));
-        const programs = getAllPrograms().map(item => ({ ...item, type: 'Program', path: '/programs' }));
-        const causes = getAllCauses().map(item => ({ ...item, type: 'Cause', path: '/causes' }));
+        const posts = (getAllPosts() || []).map(item => ({ ...item, type: 'Blog', path: '/blog' }));
+        const stories = (getAllStories() || []).map(item => ({ ...item, type: 'Story', path: '/story-hub' }));
+        const programs = (getAllPrograms() || []).map(item => ({ ...item, type: 'Program', path: '/programs' }));
+        const causes = (getAllCauses() || []).map(item => ({ ...item, type: 'Cause', path: '/causes' }));
         return [...posts, ...stories, ...programs, ...causes];
     }, []);
 

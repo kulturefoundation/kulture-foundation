@@ -1,4 +1,3 @@
-
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -17,7 +16,6 @@ import { useFirestore } from "@/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { errorEmitter, FirestorePermissionError } from "@/lib/errors";
 
-
 const formSchema = z.object({
   name: z.string().min(2, "Full name must be at least 2 characters."),
   email: z.string().email("Please enter a valid email address."),
@@ -26,7 +24,6 @@ const formSchema = z.object({
   subject: z.string().min(5, "Subject must be at least 5 characters."),
   message: z.string().min(20, "Message must be at least 20 characters."),
 });
-
 
 export default function Contact() {
   const { toast } = useToast();
@@ -75,7 +72,7 @@ export default function Contact() {
 
         toast({
             title: "Message Sent!",
-            description: "Thank you for reaching out. We will get back to you shortly.",
+            description: "Thank you for reaching out to 256 Estates Foundation. We will get back to you shortly.",
         });
         form.reset();
 
@@ -94,13 +91,13 @@ export default function Contact() {
     <section id="contact" className="py-24 sm:py-32 bg-secondary">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">LET'S BUILD TOGETHER</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary uppercase">Let's Build Together</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Whether you want to donate, volunteer, partner, or share a story that needs to be told—we want to hear from you.
+            Whether you want to donate, volunteer, partner, or share a story—we want to hear from you.
           </p>
         </div>
 
-        <Card className="max-w-3xl mx-auto">
+        <Card className="max-w-3xl mx-auto shadow-xl">
             <CardHeader>
                 <CardTitle className="text-3xl text-primary">Send Us a Message</CardTitle>
                 <CardDescription>We typically respond within 24 hours.</CardDescription>
@@ -110,11 +107,19 @@ export default function Contact() {
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <FormField control={form.control} name="name" render={({ field }) => (
-                            <FormItem><FormLabel>Full Name *</FormLabel><FormControl><Input {...field} placeholder="Kulture Foundation" disabled={isSubmitting}/></FormControl><FormMessage /></FormItem>
+                            <FormItem>
+                                <FormLabel>Full Name *</FormLabel>
+                                <FormControl><Input {...field} placeholder="Your Name" disabled={isSubmitting}/></FormControl>
+                                <FormMessage />
+                            </FormItem>
                         )} />
                         
                         <FormField control={form.control} name="email" render={({ field }) => (
-                            <FormItem><FormLabel>Email Address *</FormLabel><FormControl><Input type="email" {...field} placeholder="kulture@example.com" disabled={isSubmitting} /></FormControl><FormMessage /></FormItem>
+                            <FormItem>
+                                <FormLabel>Email Address *</FormLabel>
+                                <FormControl><Input type="email" {...field} placeholder="your@email.com" disabled={isSubmitting} /></FormControl>
+                                <FormMessage />
+                            </FormItem>
                         )} />
                     </div>
 
@@ -135,7 +140,6 @@ export default function Contact() {
                                     <SelectItem value="+256">UG +256</SelectItem>
                                     <SelectItem value="+254">KE +254</SelectItem>
                                     <SelectItem value="+255">TZ +255</SelectItem>
-                                    <SelectItem value="+250">RW +250</SelectItem>
                                     <SelectItem value="+1">USA +1</SelectItem>
                                     <SelectItem value="+44">UK +44</SelectItem>
                                   </SelectContent>
@@ -144,24 +148,31 @@ export default function Contact() {
                             />
                             <FormField control={form.control} name="phoneNumber" render={({ field }) => (
                                 <FormControl>
-                                <Input type="tel" {...field} placeholder="792 583 150" className="flex-1" disabled={isSubmitting} />
+                                <Input type="tel" {...field} placeholder="7xx xxx xxx" className="flex-1" disabled={isSubmitting} />
                                 </FormControl>
                             )} />
                         </div>
                          <FormMessage />
                     </FormItem>
 
-
                     <FormField control={form.control} name="subject" render={({ field }) => (
-                        <FormItem><FormLabel>Subject *</FormLabel><FormControl><Input {...field} placeholder="Partnership Inquiry" disabled={isSubmitting} /></FormControl><FormMessage /></FormItem>
+                        <FormItem>
+                            <FormLabel>Subject *</FormLabel>
+                            <FormControl><Input {...field} placeholder="Partnership, Donation, Inquiry..." disabled={isSubmitting} /></FormControl>
+                            <FormMessage />
+                        </FormItem>
                     )} />
 
                     <FormField control={form.control} name="message" render={({ field }) => (
-                        <FormItem><FormLabel>Message *</FormLabel><FormControl><Textarea rows={5} {...field} placeholder="Tell us how we can help..." disabled={isSubmitting} /></FormControl><FormMessage /></FormItem>
+                        <FormItem>
+                            <FormLabel>Message *</FormLabel>
+                            <FormControl><Textarea rows={5} {...field} placeholder="How can we help?" disabled={isSubmitting} /></FormControl>
+                            <FormMessage />
+                        </FormItem>
                     )} />
                     
-                    <Button type="submit" size="lg" disabled={isSubmitting} className="bg-accent text-white hover:bg-accent/90">
-                    {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                    <Button type="submit" size="lg" disabled={isSubmitting} className="w-full sm:w-auto bg-accent text-white hover:bg-accent/90">
+                    {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
                     {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                 </form>
@@ -172,4 +183,3 @@ export default function Contact() {
     </section>
   );
 }
- 
